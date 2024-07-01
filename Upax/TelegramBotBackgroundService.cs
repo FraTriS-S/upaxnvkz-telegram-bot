@@ -50,22 +50,22 @@ public class TelegramBotBackgroundService : BackgroundService
 
         InlineKeyboardMarkup inlineKeyboard = new([
             [
-                InlineKeyboardButton.WithUrl("Пакеты фасовочные", _telegramOptions.PumpsUrl),
-                InlineKeyboardButton.WithUrl("Пакеты-майки", _telegramOptions.PumpsUrl),
+                InlineKeyboardButton.WithUrl("Пакеты фасовочные", _telegramOptions.UpaxPackingPackegesGroupUrl),
+                InlineKeyboardButton.WithUrl("Пакеты-майки", _telegramOptions.UpaxShirtPackagesGroupUrl),
             ],
             [
-                InlineKeyboardButton.WithUrl("Контейнеры", _telegramOptions.PumpsUrl),
-                InlineKeyboardButton.WithUrl("Стаканы", _telegramOptions.PumpsUrl),
+                InlineKeyboardButton.WithUrl("Контейнеры", _telegramOptions.UpaxContainersGroupUrl),
+                InlineKeyboardButton.WithUrl("Стаканы", _telegramOptions.UpaxGlassesGroupUrl),
             ],
             
             [
-                InlineKeyboardButton.WithUrl("Одноразовая посуда", _telegramOptions.PumpsUrl),
+                InlineKeyboardButton.WithUrl("Одноразовая посуда", _telegramOptions.UpaxDisposableTablewareGroupUrl),
             ],
             [
-                InlineKeyboardButton.WithUrl("Расходные материалы", _telegramOptions.PumpsUrl),
+                InlineKeyboardButton.WithUrl("Расходные материалы", _telegramOptions.UpaxConsumablesGroupUrl),
             ],
             [
-                InlineKeyboardButton.WithUrl("Другое", _telegramOptions.PumpsUrl)
+                InlineKeyboardButton.WithUrl("Другое", _telegramOptions.UpaxOtherGroupUrl)
             ],
         ]);
 
